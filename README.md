@@ -177,11 +177,12 @@ SubscriptionRequiredException: The AWS Access Key Id needs a subscription for th
 **原因**
 
 AWSアカウントでKinesisが有効化されていなかったため発生しました。
+AWSアカウントを作成したばかりだと無料プランでの利用となるため、Kinesisが有効化されず利用できませんでした。
+そのため無料プランからアップデートしてKinesisを有効化する必要があります。
 
 **解決方法**
 
-AWSコンソールのKinesisページを開き、ストリームを1つ手動で作成することでサービスが有効化されました。
-
+AWSコンソールでまず無料プランをアップデートすることでKinesisが有効化されました。
 ---
 
 ### 2. FirehoseのIAM権限エラー
